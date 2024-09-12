@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@burger_sessions - Nosotros</title>
+    <title>@burger_sessions - Contacto</title>
     <link rel="@burger_sessions icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,24 +51,33 @@
 
     <!-- Main -->
     <main>
-        <section class="content-us">
-            <h1 class="content-us-h1">@sobre_nosotros</h1>
-            <p class="main-text"> Desde 2020, nuestra historia comenzó con la visión de Patxi Sol Ballester, quien, tras
-                una exitosa carrera en gastronomía y una pasión por la cerveza artesanal, se aventuró en el mundo de la
-                hamburguesa en Argentina.
-                <br>
-                <br>
-                Patxi organizaba eventos únicos de <span class="bs-font">@burger_sessions</span>, donde se ofrecían
-                hamburguesas inspiradas en homenajes e innovaciones propias, celebrando la creatividad culinaria. Con el
-                tiempo, abrió nuestro local, con el objetivo de brindar a todos el auténtico sabor de una hamburguesa de
-                calidad.
-                <br>
-                <br>
-                Cada estación trae una nueva carta, con propuestas que rinden homenaje a la estacionalidad y la
-                innovación. Aunque Patxi ya no está, su legado sigue presente en cada bocado que ofrecemos.
-            </p>
+        <section>
+            <h1>@contacto</h1>
+
+            <!-- Formulario -->
+            <form action="">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Escribe un mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Si necesitás contactarte con nosotros, podés hacerlo en cualquier momento. Estaremos respondiendo lo
+                antes posible para ayudarte con lo que necesites. Estamos aca para hacer tu mejor <span
+                    class="bs-font">@burger_experience</span></p>
+            </form>
         </section>
-        <img src="../img/sobreNosotros.png" alt="Nuestra historia" class="background-img">
+        <img src="../img/portada.png" alt="Hamburguesa" class="background-img">
     </main>
 
     <!-- Footer -->
@@ -81,8 +90,8 @@
         </div>
         <p>© Todos los derechos reservados 2020-2024 <span class="bs-font">@burger_sessions</span></p>
         <div class="nav-arrows">
-            <a href="../index.html"><img src="../img/arrowBack.png" alt="arrow back"></a>
-            <a href="sucursales.html" class="right-margin"><img src="../img/arrowNext.png" alt="arrow next"></a>
+            <a href="nuestrasBurgers.html"><img src="../img/arrowBack.png" alt="arrow back"></a>
+            <a href="../index.html" class="right-margin"><img src="../img/arrowNext.png" alt="arrow next"></a>
         </div>
     </footer>
 
