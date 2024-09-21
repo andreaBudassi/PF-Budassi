@@ -1,0 +1,11 @@
+{
+  "name": "burgersessions",
+  "version": "1.0.0",
+  "description": "Este proyecto fue desarrollado como parte del curso de HTML y CSS en CoderHouse. A lo largo del desarrollo, se aplicaron conceptos clave como diseño responsivo con media queries, grid y flexbox, así como la implementación de **Bootstrap** para mejorar la estructura del proyecto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
