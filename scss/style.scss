@@ -1,9 +1,21 @@
+// Utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Base
 @import 'base/reset';
 @import 'base/fonts';
-@import 'utils/variables';
-@import 'utils/maps';
-@import 'utils/mixins';
+
+// Layout
 @import 'layout/header';
-@import 'layout/footer';
 @import 'layout/main';
+@import 'layout/footer';
+
+// Components
 @import 'components/buttons';
+@import 'components/navbar';
+@import 'components/maps';
+@import 'components/menu';
+@import 'components/texts';
+@import 'components/mediaqueries';
+@import 'components/forms';

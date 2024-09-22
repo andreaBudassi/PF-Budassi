@@ -1,190 +1,46 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fuentes */
-@font-face {
-  font-family: 'Dimitri Swank';
-  src: url('../fonts/DimitriSwank.woff2') format('woff2'),
-      url('../fonts/DimitriSwank.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* MQ Nav */
-@media (max-width: 768px) {
-  .navbar-toggler {
-      margin-right: 1rem;
-  }
-
-  header img {
-      height: 40px;
-  }
-
-  header {
-      position: relative;
-      z-index: 10;
-  }
-}
-
-/* MQ Footer */
-@media (max-width: 768px) {
-  footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  /* Ajuste de iconos e imágenes para pantallas pequeñas */
-  footer .icons a img,
-  footer .nav-arrows a img {
-      width: 15px;
-  }
-
-  /* Ajuste de la tipografía */
-  footer p {
-      font-size: 10px;
-  }
-
-  /* Alineación de flechas e iconos */
-  footer .nav-arrows,
-  footer .icons {
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
-
-  footer .nav-arrows {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-  }
-
-  footer .icons {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-  }
-}
-
-/* MQ Main*/
-@media (max-width: 768px) {
-  main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 1rem;
-      overflow-y: auto;
-      padding-top: 60px;
-  }
-
-  h1 {
-      font-size: 25px;
-      padding-top: 60px;
-  }
-
-  /* Ocultar imagen en mobile */
-  main img.background-img {
-      display: none;
-  }
-
-  /* Centrar el texto en mobile */
-  section.content {
-      text-align: center;
-      max-width: 100%;
-  }
-
-  /* Centrar el texto en mobile y agregar padding Nosotros*/
-  section.content-us {
-      padding-top: 100px;
-      text-align: center;
-      max-width: 100%;
-      font-size: 20px;
-  }
-
-  .content-us-h1 {
-      font-size: 25px;
-      padding-top: 200px;
-  }
-}
-
-/* General */
 body {
   background-color: #f3f0eb;
   font-family: "Fjalla One", sans-serif;
   height: 100vh;
-  margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-/* Header */
+@font-face {
+  font-family: "Dimitri Swank";
+  src: url("../fonts/DimitriSwank.woff2") format("woff2"), url("../fonts/DimitriSwank.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  position: relative;
+  z-index: 10;
+}
 header img {
   height: 50px;
 }
 
-/* Navbar */
-.navbar {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* Flexbox para alinear logo y botón hamburguesa */
-.container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Ajustes para el botón hamburguesa */
-.navbar-toggler {
-  margin-left: auto;
-  padding: 0.5rem;
-}
-
-/* Links de la navbar */
-.navbar-nav .nav-link {
-  color: #f3f0eb;
-  font-family: "Fjalla One", sans-serif;
-  font-style: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-/* Espacio entre los ítems del menú */
-.navbar-nav .nav-item {
-  margin-left: 20px;
-}
-
-/* Ajustes de padding en los elementos del menú */
-.navbar-nav {
-  padding-right: 2rem;
-}
-
-/* Main general (Desktop) */
 main {
   flex-grow: 1;
   display: flex;
   background-color: #f3f0eb;
   position: relative;
 }
-
 main section {
   width: 50%;
   padding: 2rem 1rem 2rem 2rem;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   font-family: "Fjalla One", sans-serif;
 }
-
 main img.background-img {
   position: absolute;
   top: 0;
@@ -195,7 +51,6 @@ main img.background-img {
   margin: 1rem;
 }
 
-/* Footer general */
 footer {
   background-color: #333;
   color: #f3f0eb;
@@ -207,36 +62,17 @@ footer {
   position: relative;
   z-index: 3;
 }
-
-/* Ajustes para el texto */
 footer p {
   margin: 0;
   font-family: "Fjalla One", sans-serif;
 }
-
-footer .icons a {
-  margin: 0 5px;
-}
-
-/* Ajuste para los iconos */
-footer .icons a img {
-  width: 30px;
-}
-
+footer .icons a,
 footer .nav-arrows a {
   margin: 0 5px;
 }
-
+footer .icons a img,
 footer .nav-arrows a img {
   width: 30px;
-}
-
-/* Botón de contacto */
-.contact-button {
-  z-index: 2;
-  position: relative;
-  align-self: center;
-  margin-top: 20px;
 }
 
 button {
@@ -246,6 +82,10 @@ button {
   background-color: #333;
   color: #f3f0eb;
   display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(45.9, 45.9, 45.9);
 }
 
 button a {
@@ -255,59 +95,66 @@ button a {
   font-family: "Fjalla One", sans-serif;
 }
 
-button:hover {
-  background-color: #555;
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-
-/* Formulario de contacto */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  margin-bottom: 0.5rem;
-  font-family: "Fjalla One", sans-serif;
-  font-style: normal;
-  color: #333;
-}
-
-.form-group input,
-.form-group textarea {
+.navbar .navbar-toggler {
+  margin-left: auto;
   padding: 0.5rem;
-  font-size: 16px;
-  border: none;
-  border-bottom: 2px solid #000;
-  outline: none;
-  transition: border-color 0.3s ease-in-out;
+}
+.navbar .navbar-nav {
+  padding-right: 2rem;
+}
+.navbar .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+.navbar .navbar-nav .nav-link {
+  color: #f3f0eb;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"] {
-  margin-bottom: 1rem;
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+}
+.map-container {
+  filter: grayscale(100%);
+  opacity: 0.8;
 }
 
-.form-group textarea {
-  resize: none;
-  height: 100px;
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  column-gap: 20px;
+}
+.image-text-container img {
+  max-width: 150px;
+  height: auto;
+}
+.image-text-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: #d54e16;
+}
+.image-text-container p {
+  margin: 0;
+  font-size: 1em;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-bottom: 2px solid #333;
-}
-
-/* Textos */
 .bs-font {
-  font-family: 'Dimitri Swank', sans-serif;
+  font-family: "Dimitri Swank", sans-serif;
   color: #d54e16;
 }
 
 h1 {
-  font-family: 'Dimitri Swank', sans-serif;
+  font-family: "Dimitri Swank", sans-serif;
   font-size: 45px;
-  margin: 0%;
+  margin: 0;
 }
 
 .main-text {
@@ -316,32 +163,56 @@ h1 {
   text-align: justify;
 }
 
-/* Map */
-.map-container {
-  filter: grayscale(100%);
-  opacity: 0.8;
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow-y: auto;
+    padding-top: 60px;
+  }
+  header img {
+    height: 40px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .icons a img,
+  footer .nav-arrows a img {
+    width: 15px;
+  }
+  footer p {
+    font-size: 10px;
+  }
 }
-
-/* Menu */
-.image-text-container {
+.form-group {
   display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  column-gap: 20px;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-family: "Fjalla One", sans-serif;
+  color: #333;
+}
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid rgb(45.9, 45.9, 45.9);
 }
 
-.image-text-container img {
-  max-width: 150px;
-  height: auto;
-}
-
-.image-text-container h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.5em;
-  color: #d54e16;
-}
-
-.image-text-container p {
-  margin: 0;
-  font-size: 1em;
-}
+/*# sourceMappingURL=style.css.map */

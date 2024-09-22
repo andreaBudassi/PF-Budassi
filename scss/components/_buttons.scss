@@ -1,0 +1,20 @@
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: $secondary-color;
+  color: $primary-color;
+  display: inline-block;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: scale-color($secondary-color, $lightness: -10%);
+  }
+}
+
+button a {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: $font-primary;
+}

@@ -1,0 +1,28 @@
+@include responsive($breakpoint-mobile) {
+    main {
+        @include flex-center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 1rem;
+        overflow-y: auto;
+        padding-top: 60px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    footer {
+        @include flex-center;
+        flex-direction: column;
+
+        .icons a img,
+        .nav-arrows a img {
+            width: 15px;
+        }
+
+        p {
+            font-size: $font-size-small;
+        }
+    }
+}

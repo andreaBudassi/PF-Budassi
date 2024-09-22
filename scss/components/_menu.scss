@@ -1,0 +1,24 @@
+// Menu hamburgueseria
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    column-gap: 20px;
+
+    img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.5em;
+        color: $accent-color;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1em;
+    }
+}

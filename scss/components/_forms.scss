@@ -1,0 +1,27 @@
+// Formulario de contacto
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    label {
+        margin-bottom: 0.5rem;
+        font-family: $font-primary;
+        color: $secondary-color;
+    }
+
+    input,
+    textarea {
+        padding: 0.5rem;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid $secondary-color;
+        outline: none;
+        @include transition(border-color);
+
+        &:focus {
+            border-bottom: 2px solid scale-color($secondary-color, $lightness: -10%);
+        }
+    }
+}

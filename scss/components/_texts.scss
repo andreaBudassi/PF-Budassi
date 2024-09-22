@@ -1,0 +1,16 @@
+.bs-font {
+    font-family: $font-secondary;
+    color: $accent-color;
+}
+
+h1 {
+    font-family: $font-secondary;
+    font-size: $font-size-large;
+    margin: 0;
+}
+
+.main-text {
+    font-size: $font-size-medium;
+    font-family: $font-primary;
+    text-align: justify;
+}
