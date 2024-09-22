@@ -174,6 +174,27 @@ h1 {
     overflow-y: auto;
     padding-top: 60px;
   }
+  h1 {
+    font-size: 25px;
+    padding-top: 60px;
+  }
+  main img.background-img {
+    display: none;
+  }
+  main section.content {
+    text-align: center;
+    max-width: 100%;
+  }
+  main section.content-us {
+    padding-top: 100px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .content-us-h1 {
+    font-size: 25px;
+    padding-top: 200px;
+  }
   header img {
     height: 40px;
   }
