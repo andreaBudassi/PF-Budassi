@@ -7,6 +7,7 @@ Este proyecto fue desarrollado como parte del curso de HTML y CSS en CoderHouse.
 - **HTML5**: Para la estructura y el contenido del sitio.
 - **CSS3**: Para el diseño visual del sitio, con un enfoque en **grid**, **flexbox** y **media queries** para lograr un diseño responsivo.
 - **Bootstrap**: Se utilizó para implementar componentes predefinidos y asegurar una mejor compatibilidad móvil.
+- **Sass**: Utilizado como preprocesador de CSS para mejorar la gestión de los estilos del proyecto. Con Sass, se optimizó el código utilizando variables, mixins y funciones, lo que permitió un mantenimiento más sencillo y una estructura modular de los estilos. Además, Sass facilitó la creación de un diseño escalable y organizado mediante la utilización de parciales, agrupando estilos en archivos específicos para una mejor legibilidad y reutilización del código.
 - **Google Fonts**: Se importaron fuentes personalizadas desde Google Fonts.
 - **Diseño Responsivo**: Adaptación del sitio para dispositivos móviles, tabletas y escritorios.
 - **GitHub**: Repositorio del proyecto.
@@ -15,7 +16,27 @@ Este proyecto fue desarrollado como parte del curso de HTML y CSS en CoderHouse.
 
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 ├── css 
-│ └── style.css 
+│ └── style.css
+├── scss
+│ ├── base
+│ │   └── _reset.scss 
+│ │   └── _fonts.scss
+│ ├── components
+│ │   └── _buttons.scss
+│ │   └── _navbar.scss
+│ │   └──_maps.scss
+│ │   └──_menu.scss
+│ │   └── _texts.scss
+│ │   └── _mediaqueries.scss
+│ │   └── _forms.scss 
+│ ├── layout
+│ │   └──_header.scss
+│ │   └── _main.scss
+│ │   └── _footer.scss
+│ ├── utils
+│ │   └── _variables.scss
+│ │   └── _mixins.scss
+│ └── style.scss
 ├── fonts 
 │ └── DimitriSwank.woff2 
 │ └── DimitriSwank.woff 
@@ -58,10 +79,6 @@ También se utilizó un **carrusel de Bootstrap** en la página del menú de la 
 ## Cómo Ejecutar el Proyecto
 Clonar el repositorio:
 git clone https://github.com/andreaBudassi/burgerSessions.git
-
-## Futuras Mejoras
-Implementar sass.
-Implementar animaciones y transiciones para mejorar la experiencia del usuario.
 
 ## Créditos
 Este proyecto fue creado como parte de las actividades del curso HTML y CSS en CoderHouse, aplicando los conocimientos adquiridos sobre maquetación web y diseño responsivo.
