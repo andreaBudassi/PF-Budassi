@@ -1,13 +1,19 @@
+// Nombre de local
+
 .bs-font {
     font-family: $font-secondary;
     color: $accent-color;
 }
+
+// H1
 
 h1 {
     font-family: $font-secondary;
     font-size: $font-size-large;
     margin: 0;
 }
+
+// Párrafos
 
 .main-text {
     font-size: $font-size-medium;
