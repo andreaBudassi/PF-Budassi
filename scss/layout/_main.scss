@@ -6,20 +6,20 @@ main {
   flex: 1;
 
   section {
-      padding: 2rem 1rem 2rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      font-family: $font-primary;
+    padding: 2rem 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: $font-primary;
   }
 
   img.background-img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: calc(50% - 2rem);
-      height: calc(100% - 2rem);
-      object-fit: cover;
-      margin: 1rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: calc(50% - 2rem);
+    height: calc(100% - 2rem);
+    object-fit: cover;
+    margin: 1rem;
   }
 }

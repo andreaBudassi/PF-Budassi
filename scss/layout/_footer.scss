@@ -1,27 +1,27 @@
 // Footer
 
 footer {
-  background-color: $secondary-color;
-  color: $primary-color;
-  text-align: center;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 3;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
 
-  p {
-      margin: 0;
-      font-family: $font-primary;
-  }
+    p {
+        margin: 0;
+        font-family: $font-primary;
+    }
 
-  .icons a,
-  .nav-arrows a {
-      margin: 0 5px;
+    .icons a,
+    .nav-arrows a {
+        margin: 0 5px;
 
-      img {
-          width: 30px;
-      }
-  }
+        img {
+            width: 30px;
+        }
+    }
 }
