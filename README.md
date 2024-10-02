@@ -78,7 +78,7 @@ También se utilizó un **carrusel de Bootstrap** en la página del menú de la 
 
 ## Cómo Ejecutar el Proyecto
 Clonar el repositorio:
-git clone https://github.com/andreaBudassi/burgerSessions.git
+git clone https://github.com/andreaBudassi/PF-Budassi.git
 
 ## Créditos
 Este proyecto fue creado como parte de las actividades del curso HTML y CSS en CoderHouse, aplicando los conocimientos adquiridos sobre maquetación web y diseño responsivo.
