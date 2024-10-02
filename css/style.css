@@ -144,8 +144,7 @@ button a {
   max-width: 150px;
   height: auto;
 }
-.image-text-container h3 {
-  margin: 0 0 10px 0;
+.image-text-container h2 {
   font-size: 1.5em;
   color: #d54e16;
 }
@@ -166,6 +165,7 @@ h1 {
 }
 
 .main-text {
+  padding: 8px;
   font-size: 20px;
   font-family: "Fjalla One", sans-serif;
   text-align: justify;
