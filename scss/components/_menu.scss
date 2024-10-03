@@ -21,3 +21,12 @@
         font-size: 1em;
     }
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    height: auto;
+    top: 50%;
+    transform: translateY(0%);
+    z-index: 2;
+}
